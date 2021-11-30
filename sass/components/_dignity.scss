@@ -1,0 +1,58 @@
+.dignity-section {
+  padding: 94px 0 47px 0;
+}
+
+.dignity-container {
+  width: 1200px;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin: 0 auto;
+
+  &__header {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+    white-space: nowrap;
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+  }
+}
+
+.dignity-cards {
+  display: flex;
+  justify-content: space-between;
+
+  &__item {
+    width: 270px;
+  }
+
+  &__background {
+    padding: 25px 0;
+    text-align: center;
+    border-radius: 4px;
+    background-color: $hover-secondary-button;
+  }
+
+  &__content {
+    margin-top: 30px;
+  }
+
+  &__text {
+    margin-bottom: 10px;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.03em;
+  }
+
+  &__description {
+    font-size: 14px;
+    line-height: 1.17;
+    letter-spacing: 0.03em;
+    color: $secondary-text-color;
+  }
+}
