@@ -1,0 +1,259 @@
+.backdrop {
+  position: fixed;
+  z-index: 1;
+
+  transition: opacity $animation-duration $timing-function;
+
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.2);
+}
+
+.modal {
+  position: absolute;
+  padding: 40px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) scale(1);
+  width: 528px;
+  min-height: 581px;
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 4px;
+  background-color: $white-color;
+  transition: transform $animation-duration $timing-function;
+}
+
+.close-button {
+  display: flex;
+  align-items: center;
+  content: "";
+  height: 30px;
+  position: absolute;
+  cursor: pointer;
+  top: 8px;
+  right: 8px;
+  background: $white-color;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  border-radius: 50%;
+  box-sizing: border-box;
+  transition: color $animation-duration $timing-function;
+
+  &:hover {
+    color: $blue-color;
+  }
+}
+
+.close-button__icon {
+  fill: currentColor;
+}
+
+.modal__header {
+  margin-bottom: 12px;
+
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 1.15;
+  text-align: center;
+  letter-spacing: 0.03em;
+
+  color: $main-text-color;
+}
+
+.name {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 10px;
+}
+
+.name__label {
+  margin-bottom: 4px;
+  font-size: 12px;
+  line-height: 1.16;
+  letter-spacing: 0.01em;
+
+  color: $secondary-text-color;
+}
+
+.name-field {
+  position: relative;
+}
+
+.name-field__input {
+  padding: 12px 20px 12px 42px;
+  width: 100%;
+  height: 40px;
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  box-sizing: border-box;
+  border-radius: 4px;
+  font-family: $font-inherit;
+}
+
+.name-field__icon {
+  fill: currentColor;
+  display: inline-block;
+  position: absolute;
+  top: 50%;
+  left: 12px;
+
+  transform: translateY(-50%);
+}
+
+.phone {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 10px;
+}
+
+.phone__label {
+  margin-bottom: 4px;
+  font-size: 12px;
+  line-height: 1.16;
+  letter-spacing: 0.01em;
+
+  color: $secondary-text-color;
+}
+
+.phone-field {
+  position: relative;
+}
+
+.phone-field__input {
+  padding: 12px 20px 12px 42px;
+  width: 100%;
+  height: 40px;
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  box-sizing: border-box;
+  border-radius: 4px;
+  font-family: $font-inherit;
+}
+
+.phone-field__icon {
+  fill: currentColor;
+  display: inline-block;
+  position: absolute;
+  top: 50%;
+  left: 12px;
+
+  transform: translateY(-50%);
+}
+
+.email {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 10px;
+}
+
+.email__label {
+  margin-bottom: 4px;
+  font-size: 12px;
+  line-height: 1.16;
+  letter-spacing: 0.01em;
+
+  color: $secondary-text-color;
+}
+
+.email-field {
+  position: relative;
+}
+
+.email-field__input {
+  padding: 12px 20px 12px 42px;
+  width: 100%;
+  height: 40px;
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  box-sizing: border-box;
+  border-radius: 4px;
+  font-family: $font-inherit;
+}
+
+.email-field__icon {
+  fill: currentColor;
+  display: inline-block;
+  position: absolute;
+  top: 50%;
+  left: 12px;
+
+  transform: translateY(-50%);
+}
+
+.textarea {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 10px;
+}
+
+.textarea__label {
+  margin-bottom: 4px;
+  font-size: 12px;
+  line-height: 1.16;
+  letter-spacing: 0.01em;
+
+  color: $secondary-text-color;
+}
+
+.textarea__zone {
+  height: 120px;
+  padding: 12px 16px;
+
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  box-sizing: border-box;
+  border-radius: 4px;
+
+  resize: none;
+}
+
+.checkbox__label {
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  margin-top: 20px;
+  margin-bottom: 30px;
+
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+
+  color: $secondary-text-color;
+}
+
+.checkbox__input {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+
+  &:checked + .checkbox__icon {
+    background-image: url(../images/icon-check.svg);
+    background-size: contain;
+    background-origin: border-box;
+    transition: background-image $animation-duration $timing-function;
+  }
+}
+
+.checkbox__icon {
+  width: 16px;
+  height: 15px;
+  display: inline-block;
+  fill: $main-text-color;
+  background-image: url(../images/icon-nocheck.svg);
+}
+
+.checkbox__link {
+  color: $blue-color;
+  font-family: $font-inherit;
+}
+
+.form-button {
+  display: flex;
+  justify-content: center;
+}
+
+.form-button__button {
+  @extend %main-button;
+
+  &:hover {
+    background-color: $hover-main-button;
+    transition: background-color $animation-duration $timing-function;
+  }
+}

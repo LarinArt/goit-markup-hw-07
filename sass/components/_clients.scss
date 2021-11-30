@@ -7,41 +7,41 @@
   padding-left: 15px;
   padding-right: 15px;
   margin: 0 auto;
+}
 
-  &__header {
-    padding-bottom: 50px;
-    text-align: center;
-    font-weight: 700;
-    font-size: 36px;
-    line-height: 1.17;
-    letter-spacing: 0.03em;
-  }
+.clients-container__header {
+  padding-bottom: 50px;
+  text-align: center;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.17;
+  letter-spacing: 0.03em;
 }
 
 .client-card {
   justify-content: space-around;
   display: flex;
+}
 
-  &__link {
-    display: flex;
-    width: 170px;
-    height: 92px;
-    cursor: pointer;
-    border: 1px solid $icon-color;
-    background-color: $white-color;
-    border-radius: 4px;
-    color: $icon-color;
+.client-card__icon {
+  margin: 16px 32px;
+  fill: currentColor;
+}
 
-    &:hover {
-      color: $hover-main-button;
-      border-color: $blue-color;
-      transition: color $animation-duration $timing-function,
-        border-color $animation-duration $timing-function;
-    }
-  }
+.client-card__link {
+  display: flex;
+  width: 170px;
+  height: 92px;
+  cursor: pointer;
+  border: 1px solid $icon-color;
+  background-color: $white-color;
+  border-radius: 4px;
+  color: $icon-color;
 
-  &__icon {
-    margin: 16px 32px;
-    fill: currentColor;
+  &:hover {
+    color: $hover-main-button;
+    border-color: $blue-color;
+    transition: color $animation-duration $timing-function,
+      border-color $animation-duration $timing-function;
   }
 }

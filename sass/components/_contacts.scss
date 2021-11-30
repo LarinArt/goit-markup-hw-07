@@ -5,26 +5,26 @@
   &__item:last-child {
     margin-left: 50px;
   }
+}
 
-  &__link {
-    display: flex;
-    text-decoration: none;
-    align-items: center;
-    font-weight: 500;
-    font-size: 14px;
-    line-height: 1.14;
-    letter-spacing: 0.02em;
-    color: $secondary-text-color;
+.contacts__link {
+  display: flex;
+  text-decoration: none;
+  align-items: center;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+  color: $secondary-text-color;
 
-    &:hover,
-    &:focus {
-      color: $blue-color;
-      transition: color $animation-duration $timing-function;
-    }
+  &:hover,
+  &:focus {
+    color: $blue-color;
+    transition: color $animation-duration $timing-function;
   }
+}
 
-  &__icon {
-    margin-right: 10px;
-    fill: currentColor;
-  }
+.contacts__icon {
+  margin-right: 10px;
+  fill: currentColor;
 }
