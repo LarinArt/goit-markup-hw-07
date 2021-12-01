@@ -7,38 +7,38 @@
   &__item:not(:last-child) {
     margin-right: 50px;
   }
+}
 
-  &__link {
-    padding: 32px 0;
-    text-decoration: none;
-    font-weight: 500;
-    font-size: 14px;
-    line-height: 1.14;
-    letter-spacing: 0.02em;
-    color: $main-text-color;
-    position: relative;
+.site-nav__link {
+  padding: 32px 0;
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+  color: $main-text-color;
+  position: relative;
 
-    &:hover::after {
-      opacity: 1;
-    }
+  &:hover::after {
+    opacity: 1;
+  }
 
-    &--choice::after {
-      content: "";
-      bottom: -1px;
-      left: 0;
-      position: absolute;
-      width: 100%;
-      height: 4px;
-      background-color: $blue-color;
-      border-radius: 2px;
-      opacity: 1;
-    }
+  &--choice::after {
+    content: "";
+    bottom: -1px;
+    left: 0;
+    position: absolute;
+    width: 100%;
+    height: 4px;
+    background-color: $blue-color;
+    border-radius: 2px;
+    opacity: 1;
+  }
 
-    &--choice,
-    &:hover,
-    &:focus {
-      color: $blue-color;
-      transition: color $animation-duration $timing-function;
-    }
+  &--choice,
+  &:hover,
+  &:focus {
+    color: $blue-color;
+    transition: color $animation-duration $timing-function;
   }
 }

@@ -36,13 +36,13 @@
     text-transform: uppercase;
     color: $white-color;
   }
+}
 
-  &__button {
-    @extend %main-button;
+.theme__button {
+  @extend %main-button;
 
-    &:hover {
-      background-color: $hover-main-button;
-      transition: background-color $animation-duration $timing-function;
-    }
+  &:hover {
+    background-color: $hover-main-button;
+    transition: background-color $animation-duration $timing-function;
   }
 }

@@ -62,25 +62,25 @@
     background-color: $white-color;
   }
 
-  &__link {
-    color: $icon-color;
-    background-color: $white-color;
-    border-radius: 50%;
-    width: 44px;
-    height: 44px;
-    align-items: center;
-    justify-content: center;
-    display: flex;
-    cursor: pointer;
-
-    &:hover {
-      background-color: $blue-color;
-      color: $white-color;
-      transition: background-color $animation-duration $timing-function;
-    }
-  }
-
   &__icon {
     fill: currentColor;
+  }
+}
+
+.team-social__link {
+  color: $icon-color;
+  background-color: $white-color;
+  border-radius: 50%;
+  width: 44px;
+  height: 44px;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  cursor: pointer;
+
+  &:hover {
+    background-color: $blue-color;
+    color: $white-color;
+    transition: background-color $animation-duration $timing-function;
   }
 }

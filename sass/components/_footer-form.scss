@@ -16,34 +16,34 @@
 .footer-form {
   display: flex;
   justify-content: space-between;
+}
 
-  &__input {
-    height: 50px;
-    width: 358px;
-    padding: 15px 16px;
-    margin-right: 12px;
-    border: 1px solid rgba(255, 255, 255, 0.3);
-    box-sizing: border-box;
-    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
-    border-radius: 4px;
-    color: $white-color;
-    background-color: $footer-background-color;
+.footer-form__input {
+  height: 50px;
+  width: 358px;
+  padding: 15px 16px;
+  margin-right: 12px;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  box-sizing: border-box;
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+  border-radius: 4px;
+  color: $white-color;
+  background-color: $footer-background-color;
 
-    &:focus {
-      outline: 0;
-    }
+  &:focus {
+    outline: 0;
   }
+}
 
-  &__button {
-    @extend %main-button;
+.footer-form__button {
+  @extend %main-button;
 
-    &:hover {
-      background-color: $hover-main-button;
-      transition: background-color $animation-duration $timing-function;
-    }
+  &:hover {
+    background-color: $hover-main-button;
+    transition: background-color $animation-duration $timing-function;
   }
+}
 
-  &__button-icon {
-    margin-left: 10px;
-  }
+.footer-form__button-icon {
+  margin-left: 10px;
 }
