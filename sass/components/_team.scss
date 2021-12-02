@@ -1,22 +1,5 @@
 .team-section {
-  padding: 94px 0;
   background-color: var(--hover-secondary-button);
-}
-
-.team-container {
-  width: 1200px;
-  padding-left: 15px;
-  padding-right: 15px;
-  margin: 0 auto;
-
-  &__header {
-    padding-bottom: 50px;
-    text-align: center;
-    font-weight: 700;
-    font-size: 36px;
-    line-height: 1.17;
-    letter-spacing: 0.03em;
-  }
 }
 
 .team-cards {

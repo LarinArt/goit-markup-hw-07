@@ -45,7 +45,9 @@ h4,
 h5,
 h6,
 p,
-ul {
+ul,
+address,
+a {
   margin: 0;
   padding: 0;
 }
@@ -58,6 +60,46 @@ ul {
 
 .list {
   list-style: none;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+.section {
+  padding: 94px 0;
+}
+
+.container {
+  width: 1200px;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin: 0 auto;
+}
+
+.title {
+  padding-bottom: 50px;
+  text-align: center;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.17;
+  letter-spacing: 0.03em;
+}
+
+.hidden-title {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  -webkit-clip-path: inset(100%);
+          clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
 }
 
 .section-header {
@@ -174,7 +216,7 @@ ul {
   fill: currentColor;
 }
 
-.theme-section {
+.main-theme {
   padding: 200px 0;
   background-color: #2f303a;
   text-align: center;
@@ -216,28 +258,7 @@ ul {
 }
 
 .dignity-section {
-  padding: 94px 0 47px 0;
-}
-
-.dignity-container {
-  width: 1200px;
-  padding-left: 15px;
-  padding-right: 15px;
-  margin: 0 auto;
-}
-
-.dignity-container__header {
-  position: absolute;
-  width: 1px;
-  height: 1px;
-  margin: -1px;
-  border: 0;
-  padding: 0;
-  white-space: nowrap;
-  -webkit-clip-path: inset(100%);
-          clip-path: inset(100%);
-  clip: rect(0 0 0 0);
-  overflow: hidden;
+  padding-bottom: 47px;
 }
 
 .dignity-cards {
@@ -280,17 +301,10 @@ ul {
 }
 
 .examples-section {
-  padding: 47px 0 94px 0;
+  padding-bottom: 47px;
 }
 
-.examples-container {
-  width: 1200px;
-  padding-left: 15px;
-  padding-right: 15px;
-  margin: 0 auto;
-}
-
-.examples-container__header {
+.examples-title {
   padding-bottom: 50px;
   text-align: center;
   font-weight: 700;
@@ -312,35 +326,16 @@ ul {
   position: relative;
 }
 
-.examples__icon {
-  display: block;
-}
-
-.examples-background {
-  content: "";
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+.examples-overlay {
   position: absolute;
+  padding: 27px 0;
   bottom: 0;
   right: 0;
-  content: "";
   width: 100%;
-  height: 70px;
   background-color: rgba(47, 48, 58, 0.8);
 }
 
-.examples-background__text {
-  content: "";
-  position: absolute;
+.examples-overlay__text {
   width: 100%;
   font-weight: 700;
   font-size: 14px;
@@ -352,24 +347,7 @@ ul {
 }
 
 .team-section {
-  padding: 94px 0;
   background-color: var(--hover-secondary-button);
-}
-
-.team-container {
-  width: 1200px;
-  padding-left: 15px;
-  padding-right: 15px;
-  margin: 0 auto;
-}
-
-.team-container__header {
-  padding-bottom: 50px;
-  text-align: center;
-  font-weight: 700;
-  font-size: 36px;
-  line-height: 1.17;
-  letter-spacing: 0.03em;
 }
 
 .team-cards {
@@ -452,26 +430,6 @@ ul {
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.clients-section {
-  padding: 94px 0;
-}
-
-.clients-container {
-  width: 1200px;
-  padding-left: 15px;
-  padding-right: 15px;
-  margin: 0 auto;
-}
-
-.clients-container__header {
-  padding-bottom: 50px;
-  text-align: center;
-  font-weight: 700;
-  font-size: 36px;
-  line-height: 1.17;
-  letter-spacing: 0.03em;
-}
-
 .client-card {
   -ms-flex-pack: distribute;
       justify-content: space-around;
@@ -549,6 +507,10 @@ ul {
 
 .footer-contacts__link {
   color: rgba(255, 255, 255, 0.6);
+}
+
+.footer-contacts__link {
+  margin-bottom: 9px;
 }
 
 .footer-social-block {
@@ -658,31 +620,6 @@ ul {
 
 .footer-form__button-icon {
   margin-left: 10px;
-}
-
-.portfolio-section {
-  padding: 94px 0;
-}
-
-.portfolio-container {
-  width: 1200px;
-  padding-left: 15px;
-  padding-right: 15px;
-  margin: 0 auto;
-}
-
-.portfolio-container .portfolio-container__header {
-  position: absolute;
-  width: 1px;
-  height: 1px;
-  margin: -1px;
-  border: 0;
-  padding: 0;
-  white-space: nowrap;
-  -webkit-clip-path: inset(100%);
-          clip-path: inset(100%);
-  clip: rect(0 0 0 0);
-  overflow: hidden;
 }
 
 .portfolio-filter {

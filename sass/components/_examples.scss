@@ -1,22 +1,14 @@
 .examples-section {
-  padding: 47px 0 94px 0;
+  padding-bottom: 47px;
 }
 
-.examples-container {
-  width: 1200px;
-  padding-left: 15px;
-  padding-right: 15px;
-  margin: 0 auto;
-
-  &__header {
-    padding-bottom: 50px;
-    text-align: center;
-
-    font-weight: 700;
-    font-size: 36px;
-    line-height: 1.17;
-    letter-spacing: 0.03em;
-  }
+.examples-title {
+  padding-bottom: 50px;
+  text-align: center;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.17;
+  letter-spacing: 0.03em;
 }
 
 .examples {
@@ -26,39 +18,25 @@
   &__item {
     position: relative;
   }
-
-  &__icon {
-    display: block;
-  }
 }
 
-.examples-background {
-  content: "";
-  box-sizing: border-box;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+.examples__overlay {
   position: absolute;
+  padding: 27px 0;
   bottom: 0;
   right: 0;
-  content: "";
   width: 100%;
-  height: 70px;
-  background-color: rgba(47, 48, 58, 0.8);
+  background-color: $overlay-background;
+}
 
-  &__text {
-    content: "";
-    position: absolute;
+.examples__text {
+  width: 100%;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  text-align: center;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
 
-    width: 100%;
-
-    font-weight: 700;
-    font-size: 14px;
-    line-height: 1.14;
-    text-align: center;
-    letter-spacing: 0.03em;
-    text-transform: uppercase;
-
-    color: $white-color;
-  }
+  color: $white-color;
 }
