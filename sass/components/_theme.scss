@@ -38,9 +38,7 @@
   }
 }
 
-.theme__button {
-  @extend %main-button;
-
+.primary-button {
   &:hover {
     background-color: $hover-main-button;
     transition: background-color $animation-duration $timing-function;

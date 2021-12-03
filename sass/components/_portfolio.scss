@@ -1,25 +1,10 @@
-.portfolio-filter {
+.filter {
   display: flex;
   justify-content: center;
   margin-bottom: 50px;
 }
 
-.portfolio-filter__button {
-  margin-right: 8px;
-  padding: 6px 22px;
-
-  font-weight: 500;
-  font-size: 16px;
-  line-height: 1.6;
-  text-align: center;
-  letter-spacing: 0.03em;
-  font-family: $font-inherit;
-  background-color: $hover-secondary-button;
-  cursor: pointer;
-  border-radius: 4px;
-
-  border: none;
-
+.secondary-button {
   &:hover,
   &:focus {
     color: $white-color;

@@ -3,90 +3,51 @@
   background-color: $footer-background-color;
   text-align: left;
   padding: 60px 0 60px 15px;
-}
 
-.footer-container {
-  width: 1200px;
-  padding-left: 15px;
-  padding-right: 15px;
-  margin: 0 auto;
-  display: flex;
-}
-
-.footer-container__logo {
-  display: flex;
-  align-items: baseline;
-  font-family: $font-Raleway;
-  margin-bottom: 20px;
-  text-decoration: none;
-  font-weight: 700;
-  font-size: 26px;
-  line-height: 1.19;
-  letter-spacing: 0.03em;
-  color: $white-color;
-
-  &--blue {
-    color: $blue-color;
-  }
-}
-
-.footer-contacts {
-  &__address-link {
-    @extend %footer-contacts-font;
-    color: $white-color;
-  }
-
-  &__link {
-    @extend %footer-contacts-font;
-    color: $footer-contacts-color;
-  }
-}
-
-.footer-contacts__link {
-  margin-bottom: 9px;
-}
-
-.footer-social-block {
-  margin-left: 70px;
-
-  &__header {
+  &__container {
+    width: 1200px;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin: 0 auto;
     display: flex;
-    margin-bottom: 20px;
-    font-weight: 700;
-    font-size: 14px;
-    line-height: 1.14;
-    letter-spacing: 0.03em;
-    text-transform: uppercase;
-    color: $white-color;
   }
 }
 
-.footer-social {
-  display: flex;
+.map-link {
+  @extend %footer-contacts-font;
+  color: $white-color;
+}
 
+.contacts-link {
+  @extend %footer-contacts-font;
+  color: $footer-contacts-color;
+}
+
+.footer__contacts-item {
+  margin-top: 9px;
+}
+
+.footer__social-wrapper {
+  margin-left: 70px;
+}
+
+.footer__title {
+  display: flex;
+  margin-bottom: 20px;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: $white-color;
+}
+
+.social-list--footer {
   &__item:not(:last-child) {
     margin-right: 10px;
   }
-}
 
-.footer-social__link {
-  border-radius: 50%;
-  width: 44px;
-  height: 44px;
-  align-items: center;
-  justify-content: center;
-  display: flex;
-  cursor: pointer;
-  background-color: rgba(255, 255, 255, 0.1);
-  color: $white-color;
-
-  &:hover {
-    background-color: $blue-color;
-    color: $white-color;
-    transition: background-color $animation-duration $timing-function;
+  &__icon {
+    fill: currentColor;
   }
-}
-
-.footer-social__icon {
-  fill: currentColor;
 }

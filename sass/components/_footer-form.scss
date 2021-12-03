@@ -35,15 +35,13 @@
   }
 }
 
-.footer-form__button {
-  @extend %main-button;
-
+.primary-button {
   &:hover {
     background-color: $hover-main-button;
     transition: background-color $animation-duration $timing-function;
   }
 }
 
-.footer-form__button-icon {
+.primary-button__icon {
   margin-left: 10px;
 }
