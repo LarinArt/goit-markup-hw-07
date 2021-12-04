@@ -1,16 +1,34 @@
+// COLORS
 $main-text-color: #212121;
 $secondary-text-color: #757575;
 $blue-color: #2196f3;
 $white-color: #ffffff;
 $hover-main-button: #188ce8;
 $hover-secondary-button: #f5f4fa;
-$footer-contacts-color: rgba(255, 255, 255, 0.6);
 $logo-black-color: #000000;
 $footer-background-color: #2f303a;
 $border-color: #ececec;
 $icon-color: #afb1b8;
+
+$primary-color: #000000;
+$primary-shade-color: #212121;
+$primary-shade2-color: #2f303a;
+$primary-shade2-color: #2f303a;
+
+$secondary-color: #ffffff;
+$secondary-shade-color: #f5f4fa;
+$secondary-shade1-color: #ececec;
+$secondary-shade3-color: 757575;
+
+$accent-color: #2196f3;
+$accent-shade-color: #188ce8;
+
+// ANIMATION
 $animation-duration: 250ms;
 $timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-$overlay-background: rgba(47, 48, 58, 0.8);
+
+// FONTS
 $font-inherit: inherit;
 $font-Raleway: Raleway;
+$font-Roboto: Roboto;
+$font-sans-serif: sans-serif;

@@ -3,14 +3,6 @@
   background-color: $footer-background-color;
   text-align: left;
   padding: 60px 0 60px 15px;
-
-  &__container {
-    width: 1200px;
-    padding-left: 15px;
-    padding-right: 15px;
-    margin: 0 auto;
-    display: flex;
-  }
 }
 
 .map-link {
@@ -18,9 +10,9 @@
   color: $white-color;
 }
 
-.contacts-link {
+.contacts-link--secondary {
   @extend %footer-contacts-font;
-  color: $footer-contacts-color;
+  color: rgba($secondary-color, 0.6);
 }
 
 .footer__contacts-item {
@@ -32,7 +24,6 @@
 }
 
 .footer__title {
-  display: flex;
   margin-bottom: 20px;
   font-weight: 700;
   font-size: 14px;

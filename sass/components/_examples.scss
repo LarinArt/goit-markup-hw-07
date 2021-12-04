@@ -2,15 +2,6 @@
   padding-bottom: 47px;
 }
 
-.examples-title {
-  padding-bottom: 50px;
-  text-align: center;
-  font-weight: 700;
-  font-size: 36px;
-  line-height: 1.17;
-  letter-spacing: 0.03em;
-}
-
 .examples {
   display: flex;
   justify-content: space-between;
@@ -26,7 +17,7 @@
   bottom: 0;
   right: 0;
   width: 100%;
-  background-color: $overlay-background;
+  background-color: rgba($primary-shade2-color, 0.8);
 }
 
 .examples__text {

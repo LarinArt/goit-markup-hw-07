@@ -1,6 +1,5 @@
-.footer-form-block {
+.footer__form-element {
   margin-left: auto;
-  display: block;
 }
 
 .subscribe-form {
@@ -23,15 +22,4 @@
   &:focus {
     outline: 0;
   }
-}
-
-.primary-button {
-  &:hover {
-    background-color: $hover-main-button;
-    transition: background-color $animation-duration $timing-function;
-  }
-}
-
-.primary-button__icon {
-  margin-left: 10px;
 }

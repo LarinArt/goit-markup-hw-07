@@ -1,12 +1,8 @@
 .section-header {
   border: 1px solid $border-color;
-}
 
-.container-header {
-  display: flex;
-  align-items: center;
-  width: 1200px;
-  padding-left: 15px;
-  padding-right: 15px;
-  margin: 0 auto;
+  &__container-header {
+    display: flex;
+    align-items: center;
+  }
 }

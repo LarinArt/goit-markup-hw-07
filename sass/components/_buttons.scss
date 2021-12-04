@@ -1,4 +1,20 @@
 .primary-button {
+  width: 200px;
+  height: 50px;
+  margin: 0 auto;
+  cursor: pointer;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.9;
+  letter-spacing: 0.06em;
+  color: $white-color;
+  background-color: $blue-color;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+  border: none;
+}
+
+.primary-button--flex {
   @include flexCenter;
   width: 200px;
   height: 50px;
@@ -13,6 +29,17 @@
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
   border: none;
+}
+
+.primary-button__icon {
+  margin-left: 10px;
+}
+
+.primary-button {
+  &:hover {
+    background-color: $hover-main-button;
+    transition: background-color $animation-duration $timing-function;
+  }
 }
 
 .secondary-button {
