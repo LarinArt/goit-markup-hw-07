@@ -41,13 +41,3 @@
   text-transform: uppercase;
   color: $white-color;
 }
-
-.social-list--footer {
-  &__item:not(:last-child) {
-    margin-right: 10px;
-  }
-
-  &__icon {
-    fill: currentColor;
-  }
-}

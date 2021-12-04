@@ -1,10 +1,13 @@
-.main-theme {
+.theme {
   padding: 200px 0;
   background-color: $footer-background-color;
   text-align: center;
 }
 
 .theme-background {
+  padding-left: 15px;
+  padding-right: 15px;
+  margin: 0 auto;
   margin-left: auto;
   margin-right: auto;
   max-width: 1600px;
@@ -19,23 +22,16 @@
   background-position: center;
 }
 
-.theme {
-  width: 1200px;
-  padding-left: 15px;
-  padding-right: 15px;
-  margin: 0 auto;
+.theme__title {
+  margin-bottom: 30px;
 
-  &__header {
-    margin-bottom: 30px;
-
-    font-weight: 900;
-    font-size: 44px;
-    line-height: 1.37;
-    text-align: center;
-    letter-spacing: 0.06em;
-    text-transform: uppercase;
-    color: $white-color;
-  }
+  font-weight: 900;
+  font-size: 44px;
+  line-height: 1.37;
+  text-align: center;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: $white-color;
 }
 
 .primary-button {

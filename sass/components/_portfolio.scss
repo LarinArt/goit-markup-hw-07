@@ -2,6 +2,10 @@
   display: flex;
   justify-content: center;
   margin-bottom: 50px;
+
+  &__item:not(:last-child) {
+    margin-right: 8px;
+  }
 }
 
 .secondary-button {
@@ -44,20 +48,20 @@
     transition: box-shadow $animation-duration $timing-function;
   }
 
-  &:hover .portfolio-cards__animation,
-  &:focus .portfolio-cards__animation {
+  &:hover .portfolio-cards__overlay,
+  &:focus .portfolio-cards__overlay {
     transform: translatey(0);
     opacity: 1;
     transition: transform $animation-duration $timing-function;
   }
 }
 
-.portfolio-cards__image {
+.portfolio-cards__image-wrapper {
   position: relative;
   overflow: hidden;
 }
 
-.portfolio-cards__animation {
+.portfolio-cards__overlay {
   position: absolute;
   top: 0;
   left: 0;
@@ -78,7 +82,7 @@
   color: $white-color;
 }
 
-.border-cards {
+.portfolio-cards__text-wrapper {
   background: $white-color;
   border: 1px solid $border-color;
   border-top: none;
@@ -86,7 +90,7 @@
   padding: 20px 24px;
 }
 
-.border-cards__main-text {
+.portfolio-cards__title {
   font-weight: 700;
   font-size: 18px;
   line-height: 2;
@@ -95,7 +99,7 @@
   color: $main-text-color;
 }
 
-.border-cards__secondary-text {
+.portfolio-cards__discription {
   font-size: 16px;
   line-height: 1.9;
   letter-spacing: 0.03em;

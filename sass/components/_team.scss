@@ -1,5 +1,5 @@
 .team-section {
-  background-color: var(--hover-secondary-button);
+  background-color: $hover-secondary-button;
 }
 
 .team-cards {
@@ -7,17 +7,19 @@
   justify-content: space-between;
 }
 
-.team-foto {
+.team-cards__item {
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
-  background-color: var(--white-color);
+  background-color: $white-color;
 }
 
-.team-info {
-  padding: 30px 0 16px 0;
+.team-cards {
+  &__info {
+    padding: 30px 0 16px 0;
+  }
 
-  &__name {
+  &__teammate-name {
     padding: 0 0 10px 0;
     font-weight: 500;
     font-size: 16px;
@@ -26,12 +28,12 @@
     letter-spacing: 0.03em;
   }
 
-  &__position {
+  &__teammate-position {
     font-size: 16px;
     line-height: 1.19;
     text-align: center;
     letter-spacing: 0.03em;
-    color: var(--secondary-text-color);
+    color: $secondary-text-color;
   }
 }
 

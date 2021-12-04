@@ -1,24 +1,14 @@
 .footer-form-block {
   margin-left: auto;
   display: block;
-
-  &__header {
-    margin-bottom: 20px;
-    font-weight: 700;
-    font-size: 14px;
-    line-height: 1.14;
-    letter-spacing: 0.03em;
-    text-transform: uppercase;
-    color: $white-color;
-  }
 }
 
-.footer-form {
+.subscribe-form {
   display: flex;
   justify-content: space-between;
 }
 
-.footer-form__input {
+.subscribe-form__input {
   height: 50px;
   width: 358px;
   padding: 15px 16px;
