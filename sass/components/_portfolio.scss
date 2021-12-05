@@ -11,10 +11,11 @@
 .secondary-button {
   &:hover,
   &:focus {
-    color: $white-color;
-    background-color: $blue-color;
-    box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
-      0px 2px 2px rgba(0, 0, 0, 0.12);
+    color: $secondary-color;
+    background-color: $accent-color;
+    box-shadow: 0px 3px 1px rgba($primary-color, 0.1),
+      0px 1px 2px rgba($primary-color, 0.08),
+      0px 2px 2px rgba($primary-color, 0.12);
     transition: background-color $animation-duration $timing-function,
       box-shadow $animation-duration $timing-function;
   }
@@ -43,8 +44,9 @@
 
   &:hover,
   &:focus {
-    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
-      1px 4px 6px rgba(0, 0, 0, 0.16);
+    box-shadow: 0px 1px 1px rgba($primary-color, 0.12),
+      0px 4px 4px rgba($primary-color, 0.06),
+      1px 4px 6px rgba($primary-color, 0.16);
     transition: box-shadow $animation-duration $timing-function;
   }
 
@@ -67,7 +69,7 @@
   left: 0;
   width: 100%;
   height: 100%;
-  background-color: rgba(33, 150, 243, 0.9);
+  background-color: rgba($accent-color, 0.9);
   transform: translatey(100%);
   opacity: 0;
 }
@@ -79,12 +81,12 @@
   letter-spacing: 0.03em;
   padding: 63px 24px;
 
-  color: $white-color;
+  color: $secondary-color;
 }
 
 .portfolio-cards__text-wrapper {
-  background: $white-color;
-  border: 1px solid $border-color;
+  background: $secondary-color;
+  border: 1px solid $secondary-shade1-color;
   border-top: none;
   box-sizing: border-box;
   padding: 20px 24px;
@@ -96,12 +98,12 @@
   line-height: 2;
 
   letter-spacing: 0.06em;
-  color: $main-text-color;
+  color: $primary-shade-color;
 }
 
 .portfolio-cards__discription {
   font-size: 16px;
   line-height: 1.9;
   letter-spacing: 0.03em;
-  color: $secondary-text-color;
+  color: $secondary-shade3-color;
 }

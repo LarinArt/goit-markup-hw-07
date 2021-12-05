@@ -15,11 +15,11 @@
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.02em;
-  color: $secondary-text-color;
+  color: $secondary-shade3-color;
 
   &:hover,
   &:focus {
-    color: $blue-color;
+    color: $accent-color;
     transition: color $animation-duration $timing-function;
   }
 }

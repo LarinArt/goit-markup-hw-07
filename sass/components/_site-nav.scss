@@ -16,7 +16,7 @@
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.02em;
-  color: $main-text-color;
+  color: $primary-shade-color;
   position: relative;
 
   &:hover::after {
@@ -30,7 +30,7 @@
     position: absolute;
     width: 100%;
     height: 4px;
-    background-color: $blue-color;
+    background-color: $accent-color;
     border-radius: 2px;
     opacity: 1;
   }
@@ -38,7 +38,7 @@
   &--choice,
   &:hover,
   &:focus {
-    color: $blue-color;
+    color: $accent-color;
     transition: color $animation-duration $timing-function;
   }
 }

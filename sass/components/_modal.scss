@@ -6,7 +6,7 @@
 
   width: 100%;
   height: 100%;
-  background-color: rgba(0, 0, 0, 0.2);
+  background-color: rgba($primary-color, 0.2);
 }
 
 .modal {
@@ -17,10 +17,11 @@
   transform: translate(-50%, -50%) scale(1);
   width: 528px;
   min-height: 581px;
-  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
-    0px 2px 1px rgba(0, 0, 0, 0.2);
+  box-shadow: 0px 1px 3px rgba($primary-color, 0.12),
+    0px 1px 1px rgba($primary-color, 0.14),
+    0px 2px 1px rgba($primary-color, 0.2);
   border-radius: 4px;
-  background-color: $white-color;
+  background-color: $secondary-color;
   transition: transform $animation-duration $timing-function;
 }
 
@@ -33,14 +34,14 @@
   cursor: pointer;
   top: 8px;
   right: 8px;
-  background: $white-color;
-  border: 1px solid rgba(0, 0, 0, 0.1);
+  background: $secondary-color;
+  border: 1px solid rgba($primary-color, 0.1);
   border-radius: 50%;
   box-sizing: border-box;
   transition: color $animation-duration $timing-function;
 
   &:hover {
-    color: $blue-color;
+    color: $accent-color;
   }
 }
 
@@ -57,7 +58,7 @@
   text-align: center;
   letter-spacing: 0.03em;
 
-  color: $main-text-color;
+  color: $primary-shade-color;
 }
 
 .name {
@@ -72,7 +73,7 @@
   line-height: 1.16;
   letter-spacing: 0.01em;
 
-  color: $secondary-text-color;
+  color: $secondary-shade3-color;
 }
 
 .name-field {
@@ -83,7 +84,7 @@
   padding: 12px 20px 12px 42px;
   width: 100%;
   height: 40px;
-  border: 1px solid rgba(33, 33, 33, 0.2);
+  border: 1px solid rgba($primary-shade-color, 0.2);
   box-sizing: border-box;
   border-radius: 4px;
   font-family: $font-inherit;
@@ -111,7 +112,7 @@
   line-height: 1.16;
   letter-spacing: 0.01em;
 
-  color: $secondary-text-color;
+  color: $secondary-shade3-color;
 }
 
 .phone-field {
@@ -122,7 +123,7 @@
   padding: 12px 20px 12px 42px;
   width: 100%;
   height: 40px;
-  border: 1px solid rgba(33, 33, 33, 0.2);
+  border: 1px solid rgba($primary-shade-color, 0.2);
   box-sizing: border-box;
   border-radius: 4px;
   font-family: $font-inherit;
@@ -150,7 +151,7 @@
   line-height: 1.16;
   letter-spacing: 0.01em;
 
-  color: $secondary-text-color;
+  color: $secondary-shade3-color;
 }
 
 .email-field {
@@ -161,7 +162,7 @@
   padding: 12px 20px 12px 42px;
   width: 100%;
   height: 40px;
-  border: 1px solid rgba(33, 33, 33, 0.2);
+  border: 1px solid rgba($primary-shade-color, 0.2);
   box-sizing: border-box;
   border-radius: 4px;
   font-family: $font-inherit;
@@ -189,14 +190,14 @@
   line-height: 1.16;
   letter-spacing: 0.01em;
 
-  color: $secondary-text-color;
+  color: $secondary-shade3-color;
 }
 
 .textarea__zone {
   height: 120px;
   padding: 12px 16px;
 
-  border: 1px solid rgba(33, 33, 33, 0.2);
+  border: 1px solid rgba($primary-shade-color, 0.2);
   box-sizing: border-box;
   border-radius: 4px;
 
@@ -215,7 +216,7 @@
   line-height: 1.71;
   letter-spacing: 0.03em;
 
-  color: $secondary-text-color;
+  color: $secondary-shade3-color;
 }
 
 .checkbox__input {
@@ -235,11 +236,11 @@
   width: 16px;
   height: 15px;
   display: inline-block;
-  fill: $main-text-color;
+  fill: $primary-shade-color;
   background-image: url(../images/icon-nocheck.svg);
 }
 
 .checkbox__link {
-  color: $blue-color;
+  color: $accent-color;
   font-family: $font-inherit;
 }

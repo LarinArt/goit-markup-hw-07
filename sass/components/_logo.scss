@@ -7,14 +7,16 @@
   letter-spacing: 0.03em;
 
   &--black {
-    color: $logo-black-color;
+    color: $primary-color;
   }
 
   &--white {
-    color: $white-color;
+    color: $secondary-color;
+    display: flex;
+    margin-bottom: 20px;
   }
 
   &__web {
-    color: $blue-color;
+    color: $accent-color;
   }
 }

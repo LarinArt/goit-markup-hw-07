@@ -1,6 +1,6 @@
 .theme {
   padding: 200px 0;
-  background-color: $footer-background-color;
+  background-color: $primary-shade3-color;
   text-align: center;
 }
 
@@ -13,8 +13,8 @@
   max-width: 1600px;
   background-image: linear-gradient(
       to right,
-      rgba(47, 48, 58, 0.4),
-      rgba(47, 48, 58, 0.4)
+      rgba($primary-shade3-color, 0.4),
+      rgba($primary-shade3-color, 0.4)
     ),
     url(../images/main-background.jpg);
   background-repeat: no-repeat;
@@ -31,12 +31,12 @@
   text-align: center;
   letter-spacing: 0.06em;
   text-transform: uppercase;
-  color: $white-color;
+  color: $secondary-color;
 }
 
 .primary-button {
   &:hover {
-    background-color: $hover-main-button;
+    background-color: $accent-shade-color;
     transition: background-color $animation-duration $timing-function;
   }
 }
