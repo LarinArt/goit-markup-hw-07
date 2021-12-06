@@ -21,7 +21,7 @@
   &:hover {
     color: $accent-shade-color;
     border-color: $accent-color;
-    transition: color $animation-duration $timing-function,
-      border-color $animation-duration $timing-function;
+    @include transition(color);
+    @include transition(border-color);
   }
 }

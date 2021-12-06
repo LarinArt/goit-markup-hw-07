@@ -1,26 +1,3 @@
-.filter {
-  display: flex;
-  justify-content: center;
-  margin-bottom: 50px;
-
-  &__item:not(:last-child) {
-    margin-right: 8px;
-  }
-}
-
-.secondary-button {
-  &:hover,
-  &:focus {
-    color: $secondary-color;
-    background-color: $accent-color;
-    box-shadow: 0px 3px 1px rgba($primary-color, 0.1),
-      0px 1px 2px rgba($primary-color, 0.08),
-      0px 2px 2px rgba($primary-color, 0.12);
-    transition: background-color $animation-duration $timing-function,
-      box-shadow $animation-duration $timing-function;
-  }
-}
-
 .portfolio-cards {
   display: flex;
   flex-wrap: wrap;
@@ -47,14 +24,14 @@
     box-shadow: 0px 1px 1px rgba($primary-color, 0.12),
       0px 4px 4px rgba($primary-color, 0.06),
       1px 4px 6px rgba($primary-color, 0.16);
-    transition: box-shadow $animation-duration $timing-function;
+    @include transition(box-shadow);
   }
 
   &:hover .portfolio-cards__overlay,
   &:focus .portfolio-cards__overlay {
     transform: translatey(0);
     opacity: 1;
-    transition: transform $animation-duration $timing-function;
+    @include transition(transform);
   }
 }
 

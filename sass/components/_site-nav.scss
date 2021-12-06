@@ -39,6 +39,6 @@
   &:hover,
   &:focus {
     color: $accent-color;
-    transition: color $animation-duration $timing-function;
+    @include transition(color);
   }
 }

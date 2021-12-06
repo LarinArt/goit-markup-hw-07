@@ -6,12 +6,20 @@
 }
 
 .map-link {
-  @extend %footer-contacts-font;
+  text-decoration: none;
+  font-style: normal;
+  font-size: 14px;
+  line-height: 1.7;
+  letter-spacing: 0.03em;
   color: $secondary-color;
 }
 
-.contacts-link--secondary {
-  @extend %footer-contacts-font;
+.footer__contacts-link {
+  text-decoration: none;
+  font-style: normal;
+  font-size: 14px;
+  line-height: 1.7;
+  letter-spacing: 0.03em;
   color: rgba($secondary-color, 0.6);
 }
 

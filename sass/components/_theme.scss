@@ -1,15 +1,11 @@
 .theme {
-  padding: 200px 0;
+  padding: 200px 15px;
   background-color: $primary-shade3-color;
   text-align: center;
 }
 
 .theme-background {
-  padding-left: 15px;
-  padding-right: 15px;
   margin: 0 auto;
-  margin-left: auto;
-  margin-right: auto;
   max-width: 1600px;
   background-image: linear-gradient(
       to right,
@@ -32,11 +28,4 @@
   letter-spacing: 0.06em;
   text-transform: uppercase;
   color: $secondary-color;
-}
-
-.primary-button {
-  &:hover {
-    background-color: $accent-shade-color;
-    transition: background-color $animation-duration $timing-function;
-  }
 }
