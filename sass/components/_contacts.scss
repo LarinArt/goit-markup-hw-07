@@ -17,6 +17,15 @@
   letter-spacing: 0.02em;
   color: $secondary-shade3-color;
 
+  &--secondary {
+    text-decoration: none;
+    font-style: normal;
+    font-size: 14px;
+    line-height: 1.7;
+    letter-spacing: 0.03em;
+    color: rgba($secondary-color, 0.6);
+  }
+
   &:hover,
   &:focus {
     color: $accent-color;

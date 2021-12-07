@@ -16,21 +16,21 @@
 
   &--primary {
     background-color: $secondary-color;
-    fill: $primary-shade2-color;
+    color: $primary-shade2-color;
   }
 
   &--secondary {
     background-color: rgba($secondary-color, 0.1);
-    fill: $secondary-color;
+    color: $secondary-color;
   }
 
   &:hover {
     background-color: $accent-color;
-    fill: $secondary-color;
+    color: $secondary-color;
     @include transition(background-color);
   }
 }
 
-social-list__icon {
+.social-list__icon {
   fill: currentColor;
 }
