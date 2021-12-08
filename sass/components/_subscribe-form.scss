@@ -6,20 +6,3 @@
   display: flex;
   justify-content: space-between;
 }
-
-.subscribe-form__input {
-  height: 50px;
-  width: 358px;
-  padding: 15px 16px;
-  margin-right: 12px;
-  border: 1px solid rgba($secondary-color, 0.3);
-  box-sizing: border-box;
-  filter: drop-shadow(0px 4px 4px rgba($primary-color, 0.15));
-  border-radius: 4px;
-  color: $secondary-color;
-  background-color: $primary-shade3-color;
-
-  &:focus {
-    outline: 0;
-  }
-}

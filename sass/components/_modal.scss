@@ -75,29 +75,3 @@
 
   color: $secondary-shade3-color;
 }
-
-.checkbox__input {
-  -webkit-appearance: none;
-  -moz-appearance: none;
-  appearance: none;
-
-  &:checked + .checkbox__icon {
-    background-image: url(../images/icon-check.svg);
-    background-size: contain;
-    background-origin: border-box;
-    @include transition(background-image);
-  }
-}
-
-.checkbox__icon {
-  width: 16px;
-  height: 15px;
-  display: inline-block;
-  fill: $primary-shade-color;
-  background-image: url(../images/icon-nocheck.svg);
-}
-
-.checkbox__link {
-  color: $accent-color;
-  font-family: $font-inherit;
-}
